@@ -27,7 +27,13 @@ export class News extends Component {
     this.setState({articles:[]})
     console.log(this.state.want,"kfdhi")
     
-    const y = await axios.get(`https://newsapi.org/v2/everything?q=${this.state.want}&apiKey=05c82e15f8a244f5b0871d91f612bf88`);
+    const y = await axios.get(`https://newsapi.org/v2/everything?q=${this.state.want}&apiKey=05c82e15f8a244f5b0871d91f612bf88`, {
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'User-Agent': 'Mozilla/5.0'
+  }
+});
  
     
     this.setState({ articles: y.data.articles });
