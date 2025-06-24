@@ -16,7 +16,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         
-        "https://news-monkey-phi-two.vercel.app/",
+        "*",
      
     ],
     allow_credentials=True,
