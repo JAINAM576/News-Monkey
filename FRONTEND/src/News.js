@@ -34,7 +34,7 @@ export class News extends Component {
     this.setState({ loading: true, error: null, articles: [], done: "" });
     
     try {
-      const response = await axios.post(`http://localhost:5000/api/proxy`, 
+      const response = await axios.post(`https://news-monkey-backend.onrender.com/api/proxy`, 
         { field: this.state.want },
         {
           withCredentials: true,
