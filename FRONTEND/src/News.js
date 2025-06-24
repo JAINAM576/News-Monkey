@@ -37,7 +37,6 @@ export class News extends Component {
       const response = await axios.post(`https://news-monkey-backend.onrender.com/api/proxy`, 
         { field: this.state.want },
         {
-          withCredentials: true,
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
