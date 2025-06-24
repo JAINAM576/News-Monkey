@@ -15,8 +15,8 @@ app = FastAPI(title="API Proxy Backend")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000", 
-        "https://your-frontend-domain.com",
+        
+        "https://news-monkey-phi-two.vercel.app/",
      
     ],
     allow_credentials=True,
