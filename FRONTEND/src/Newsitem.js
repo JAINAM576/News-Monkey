@@ -23,7 +23,7 @@ export class Newsitem extends Component {
                         <div className="card-body " style={{width:'17.8rem',height:'17rem'}} >
                             <h5 className="card-title">{title.slice(0,62)}...</h5> 
                             <p className="card-text" > {descrip.length>131?(descrip).slice(0,131):descrip}...</p>
-                            <a href={url}  className="btn btn-primary" style={{position:'absolute',bottom:'2px',left:"50%"}}>Go somewhere</a>
+                            <a href={url}  className="btn btn-primary" style={{position:'absolute',bottom:'2px',left:"50%"}}>Go TO Article</a>
                         </div>
                 </div>
             </div>
